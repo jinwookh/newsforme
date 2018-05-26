@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_natural">#AED581</color>
+    <color name="color_verge">#90A4AE</color>
+    <color name="color_aljazeera">#81D4FA</color>
+    <color name = "color_hindu">#4DD0E1</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This xml file is for one Item design, which is part of listview-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <!-- one item consists two part. Title and Description. Both part will include padding right and left.-->
+    <!-- first part of item is view of title.-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:id="@+id/turtle"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:text="hello"/>
+
+    <!-- Second part of item is view of title. There will be 10dp margin between textviews.
+     There are difference of size of text between two textviews.-->
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom = "70dp"
+        android:id="@+id/description"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="yikes"/>
+
+
+</LinearLayout>

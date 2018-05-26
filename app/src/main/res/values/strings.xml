@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NewsForMe</string>
+
+   <!-- string for api of national georgraphic    -->
+    <string name = "national_geographic_api">https://newsapi.org/v1/articles?source=national-geographic&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!-- string for api of Hindu -->
+    <string name = "the_hindu_api">https://newsapi.org/v1/articles?source=the-hindu&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of Verge-->
+    <string name = "the_verge_api">https://newsapi.org/v1/articles?source=the-verge&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of AlJazeera-->
+    <string name = "al_jazeera_api">https://newsapi.org/v1/articles?source=al-jazeera-english&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name = "first_tab">National Geographic</string>
+    <string name="second_tab">The Hindu</string>
+    <string name = "third_tab">The Verge</string>
+    <string name="fourth_tab">Al Jazeera(US)</string>
+    <string name="no_network">No network connection</string>
+
+</resources>

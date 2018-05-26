@@ -1,0 +1,10 @@
+2017.5.29 One exception is not solved.
+ javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-29 21:52:15.447 21152-21195/com.example.minkyung.newsforme W/System.err:     at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:398)
+05-29 21:52:15.447 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpConnection.setupSecureSocket(HttpConnection.java:210)
+05-29 21:52:15.447 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpsURLConnectionImpl$HttpsEngine.makeSslConnection(HttpsURLConnectionImpl.java:478)
+05-29 21:52:15.447 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpsURLConnectionImpl$HttpsEngine.connect(HttpsURLConnectionImpl.java:433)
+05-29 21:52:15.447 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-29 21:52:15.454 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-29 21:52:15.454 21152-21195/com.example.minkyung.newsforme W/System.err:     at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+......
