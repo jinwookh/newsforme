@@ -1,0 +1,142 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\6893dc4e4ca2e608d90fa05bc9d27998\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d095e75156efbfc82be3ecdcce31c133\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\6928924c98574aea4d245f94ccba5efd\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\fbfb0ad76111b6c213a2fc89b70dd8ce\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\8029e67b9a7517fb22716e1a8e1993e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\e70f518be87d5f5725fda43d27701677\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\abd23156f487403b0f68370a9339f0fe\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\02ae1ee219ceb38854d790f3ff0c44fb\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\b03d414402e10dd3b00f6422fd7f4d73\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\3c2917e760801b1bb786126b8e2c221a\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\4c2322659d64a2970dc6a8c671406ecc\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\f379a99b438a2222bab54ec42a71d050\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:6:22-64
+application
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:8:5-23:19
+MERGED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\6893dc4e4ca2e608d90fa05bc9d27998\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\6893dc4e4ca2e608d90fa05bc9d27998\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d095e75156efbfc82be3ecdcce31c133\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d095e75156efbfc82be3ecdcce31c133\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\6928924c98574aea4d245f94ccba5efd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\6928924c98574aea4d245f94ccba5efd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\fbfb0ad76111b6c213a2fc89b70dd8ce\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\fbfb0ad76111b6c213a2fc89b70dd8ce\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\e70f518be87d5f5725fda43d27701677\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\e70f518be87d5f5725fda43d27701677\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\abd23156f487403b0f68370a9339f0fe\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\abd23156f487403b0f68370a9339f0fe\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\02ae1ee219ceb38854d790f3ff0c44fb\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\02ae1ee219ceb38854d790f3ff0c44fb\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\b03d414402e10dd3b00f6422fd7f4d73\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\b03d414402e10dd3b00f6422fd7f4d73\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\3c2917e760801b1bb786126b8e2c221a\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\3c2917e760801b1bb786126b8e2c221a\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\4c2322659d64a2970dc6a8c671406ecc\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\4c2322659d64a2970dc6a8c671406ecc\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\f379a99b438a2222bab54ec42a71d050\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\f379a99b438a2222bab54ec42a71d050\AndroidManifest.xml:25:5-20
+	android:supportsRtl
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.minkyung.newsforme.MainActivity
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.example.minkyung.newsforme.settingActivity
+ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:22:9-62
+	android:name
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml:22:19-50
+uses-sdk
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\6893dc4e4ca2e608d90fa05bc9d27998\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\6893dc4e4ca2e608d90fa05bc9d27998\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d095e75156efbfc82be3ecdcce31c133\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\d095e75156efbfc82be3ecdcce31c133\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\6928924c98574aea4d245f94ccba5efd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\6928924c98574aea4d245f94ccba5efd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\fbfb0ad76111b6c213a2fc89b70dd8ce\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\fbfb0ad76111b6c213a2fc89b70dd8ce\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\8029e67b9a7517fb22716e1a8e1993e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\8029e67b9a7517fb22716e1a8e1993e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\e70f518be87d5f5725fda43d27701677\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\e70f518be87d5f5725fda43d27701677\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\abd23156f487403b0f68370a9339f0fe\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\abd23156f487403b0f68370a9339f0fe\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\02ae1ee219ceb38854d790f3ff0c44fb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\02ae1ee219ceb38854d790f3ff0c44fb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\b03d414402e10dd3b00f6422fd7f4d73\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\b03d414402e10dd3b00f6422fd7f4d73\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\3c2917e760801b1bb786126b8e2c221a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\3c2917e760801b1bb786126b8e2c221a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\4c2322659d64a2970dc6a8c671406ecc\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\4c2322659d64a2970dc6a8c671406ecc\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\f379a99b438a2222bab54ec42a71d050\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\f379a99b438a2222bab54ec42a71d050\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] C:\Users\SOGANG\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\7753b50381ceaf117391e52a6f21e7bf\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SOGANG\newsforme\app\src\main\AndroidManifest.xml

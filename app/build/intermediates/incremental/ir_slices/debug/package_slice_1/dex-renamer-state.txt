@@ -1,0 +1,4 @@
+#Mon Jan 07 14:57:41 KST 2019
+base.0=C\:\\Users\\SOGANG\\newsforme\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
+renamed.0=classes.dex

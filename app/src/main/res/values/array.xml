@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- These are the options displayed in the uri drop-down Spinner -->
+    <string-array name="array_uri_options">
+        <item>@string/national_geographic</item>
+        <item>@string/the_hindu</item>
+        <item>@string/the_verge</item>
+        <item>@string/al_jazeera</item>
+        <item>@string/american_conservative</item>
+        <item>@string/korea</item>
+        <item>@string/hacker_news</item>
+        <item>@string/ars_technica</item>
+    </string-array>
+
+</resources>

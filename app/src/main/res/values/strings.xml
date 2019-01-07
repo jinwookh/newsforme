@@ -1,17 +1,41 @@
 <resources>
     <string name="app_name">NewsForMe</string>
 
-   <!-- string for api of national georgraphic    -->
-    <string name = "national_geographic_api">https://newsapi.org/v1/articles?source=national-geographic&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!-- below is string constant for news uri -->
+    <string name="national_geographic_uri">https://newsapi.org/v1/articles?source=national-geographic&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
     <!-- string for api of Hindu -->
-    <string name = "the_hindu_api">https://newsapi.org/v1/articles?source=the-hindu&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name="the_hindu_uri">https://newsapi.org/v1/articles?source=the-hindu&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
     <!--string for api of Verge-->
-    <string name = "the_verge_api">https://newsapi.org/v1/articles?source=the-verge&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name="the_verge_uri">https://newsapi.org/v1/articles?source=the-verge&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
     <!--string for api of AlJazeera-->
-    <string name = "al_jazeera_api">https://newsapi.org/v1/articles?source=al-jazeera-english&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
-    <string name = "first_tab">National Geographic</string>
+    <string name="al_jazeera_uri">https://newsapi.org/v1/articles?source=al-jazeera-english&amp;sortBy=top&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of hacker_news-->
+    <string name ="hacker_news_uri"> https://newsapi.org/v2/top-headlines?sources=hacker-news&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of ars_technica-->
+    <string name = "ars_technica_uri"> https://newsapi.org/v2/top-headlines?sources=ars-technica&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of american conservative-->
+    <string name = "american_conversative_uri">https://newsapi.org/v2/top-headlines?sources=the-american-conservative&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <!--string for api of news of korea-->
+    <string name = "korea_uri">https://newsapi.org/v2/top-headlines?country=kr&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+
+
+    <!-- above is string constant for news name -->
+    <string name="national_geographic">National Geographic</string>
+    <string name ="the_hindu">The Hindu</string>
+    <string name = "the_verge"> The Verge</string>
+    <string name = "al_jazeera"> Al Jazeera</string>
+    <string name = "hacker_news"> Hacker News </string>
+    <string name = "ars_technica"> Ars Technica</string>
+    <string name = "american_conservative"> American Conservative </string>
+    <string name = "korea">Korea</string>
+
+
+
+
+
+    <string name="first_tab">National Geographic</string>
     <string name="second_tab">The Hindu</string>
-    <string name = "third_tab">The Verge</string>
+    <string name="third_tab">The Verge</string>
     <string name="fourth_tab">Al Jazeera(US)</string>
     <string name="no_network">No network connection</string>
 
