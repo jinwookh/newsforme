@@ -102,6 +102,7 @@ public class AlJazeeraFragment extends Fragment implements LoaderManager.LoaderC
         Log.i(LOG_TAG, "Loader created");
         //Since first parameter has to be Context, I used getActivity() method. Do not know what exact Activity is though.
         //Used getString method to convert R.String resource ID to String class.
+        //gotta do databse query at below function's 2nd parameter
         return new NewsAsyncLoader(getActivity() ,getString(R.string.al_jazeera_uri));
     }
 }

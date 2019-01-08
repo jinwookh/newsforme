@@ -759,6 +759,14 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check_al_jazeera
+id check_american_conservative
+id check_ars_technica
+id check_korea
+id check_national_geographic
+id check_the_hacker_news
+id check_the_hindu
+id check_the_verge
 id checkbox
 id chronometer
 id clip_horizontal
@@ -853,10 +861,6 @@ id snackbar_action
 id snackbar_text
 id snap
 id spacer
-id spinner
-id spinner2
-id spinner3
-id spinner4
 id split_action_bar
 id spread
 id spread_inside
@@ -873,6 +877,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
