@@ -11,9 +11,13 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
 
 public class settingActivity extends AppCompatActivity {
 
@@ -25,10 +29,15 @@ public class settingActivity extends AppCompatActivity {
     private CheckBox cb_na;
     private CheckBox cb_hin;
     private CheckBox cb_hack;
-
+    private int count = 0;
+    private int max = 4;
+    //will count will be refreshed every time when setting view is opened?
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
@@ -41,6 +50,36 @@ public class settingActivity extends AppCompatActivity {
         cb_hin = (CheckBox)findViewById(R.id.check_the_hindu);
         cb_hack = (CheckBox)findViewById(R.id.check_the_hacker_news);
 
+
+
+        CompoundButton.OnCheckedChangeListener ch = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if( count == max && b ==  true) {
+                    compoundButton.setChecked((false));
+                    Toast.makeText(getApplicationContext(),"You picked more than 4 media!", Toast.LENGTH_SHORT).show();
+                }
+                else if(count< max && b == true) {
+
+                    count++;
+
+                }
+                else if ( b ==  false) {
+
+                    count--;
+                }
+            }
+        };
+
+        cb_al.setOnCheckedChangeListener(ch);
+        cb_am.setOnCheckedChangeListener(ch);
+        cb_ars.setOnCheckedChangeListener(ch);
+        cb_hin.setOnCheckedChangeListener(ch);
+        cb_na.setOnCheckedChangeListener(ch);
+        cb_ver.setOnCheckedChangeListener(ch);
+        cb_kor.setOnCheckedChangeListener(ch);
+        cb_hack.setOnCheckedChangeListener(ch);
 
 
 
@@ -59,7 +98,8 @@ public class settingActivity extends AppCompatActivity {
                 if(cb_hack.isChecked() == true) url.add(getString(R.string.hacker_news_uri));
 
                 if(url.size() != 4) {
-                    Log.d("mytag", "wrong size error");
+
+                    Toast.makeText(getApplicationContext(),"More or less than 4 media checked! error!",Toast.LENGTH_SHORT);
                 }
 
                 else {
