@@ -28,7 +28,8 @@ public class SettingDbHelper extends SQLiteOpenHelper {
         // Create a String that contains the SQL statement to create the pets table
         String SQL_CREATE_SETTING_TABLE =  "CREATE TABLE " + SettingContract.SettingEntry.TABLE_NAME + " ("
                 + SettingContract.SettingEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + SettingContract.SettingEntry.COLUMN_URI+ " TEXT NOT NULL );";
+                + SettingContract.SettingEntry.COLUMN_URL+ " TEXT NOT NULL, "
+                + SettingContract.SettingEntry.COLUMN_NAME+ " TEXT NOT NULL );";
 
         // Execute the SQL statement
         db.execSQL(SQL_CREATE_SETTING_TABLE);

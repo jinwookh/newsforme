@@ -12,9 +12,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.minkyung.newsforme.data.SettingContract;
 import com.example.minkyung.newsforme.data.SettingDbHelper;
+
+import java.util.ArrayList;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,13 +47,50 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
         }
 
-        if (columnNumber == 4) {
-            ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
-            SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
-            viewPager.setAdapter(adapter);
+        String[] projection = {
+                SettingContract.SettingEntry._ID,
+                SettingContract.SettingEntry.COLUMN_URL,
+                SettingContract.SettingEntry.COLUMN_NAME,
+                 };
 
-            TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-            tabLayout.setupWithViewPager(viewPager);
+        cursor = db.query(
+                SettingContract.SettingEntry.TABLE_NAME,   // The table to query
+                projection,            // The columns to return
+                null,                  // The columns for the WHERE clause
+                null,                  // The values for the WHERE clause
+                null,                  // Don't group the rows
+                null,                  // Don't filter by row groups
+                null);                   // The sort order
+
+
+        int urlColumnIndex = cursor.getColumnIndex(SettingContract.SettingEntry.COLUMN_URL);
+        int nameColumnIndex = cursor.getColumnIndex(SettingContract.SettingEntry.COLUMN_NAME);
+
+        if (columnNumber == 4) {
+            // Use that index to extract the String or Int value of the word
+            // at the current row the cursor is on.
+            ArrayList<String> urlList = new ArrayList<String>();
+            ArrayList<String> nameList = new ArrayList<String>();
+            while (cursor.moveToNext()) {
+
+                String currentURL = cursor.getString(urlColumnIndex);
+                String currentName = cursor.getString(nameColumnIndex);
+                urlList.add(currentURL);
+                nameList.add(currentName);
+
+            }
+
+            if (urlList.size() == 4 && nameList.size() == 4) {
+                ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+                SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), urlList, nameList);
+                viewPager.setAdapter(adapter);
+
+                TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+                tabLayout.setupWithViewPager(viewPager);
+            }
+            else {
+                Toast.makeText(getApplicationContext(), "Something wrong with getting data from db. row number is" + urlList.size(), Toast.LENGTH_SHORT).show();
+            }
         }
 
 

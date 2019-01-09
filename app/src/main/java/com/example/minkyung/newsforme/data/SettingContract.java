@@ -22,7 +22,8 @@ public final class SettingContract {
          *
          * Type: TEXT
          */
-        public final static String COLUMN_URI="url";
+        public final static String COLUMN_URL="url";
+        public final static String COLUMN_NAME="name";
 
     }
 

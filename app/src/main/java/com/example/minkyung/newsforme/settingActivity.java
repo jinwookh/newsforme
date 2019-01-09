@@ -1,7 +1,10 @@
 package com.example.minkyung.newsforme;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,11 +19,15 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.minkyung.newsforme.data.SettingContract;
+import com.example.minkyung.newsforme.data.SettingDbHelper;
+
 import java.util.ArrayList;
 
 
 public class settingActivity extends AppCompatActivity {
 
+    private SettingDbHelper mDbHelper;
     private CheckBox cb_al;
     private CheckBox cb_am;
     private CheckBox cb_ver;
@@ -35,8 +42,6 @@ public class settingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
@@ -81,28 +86,81 @@ public class settingActivity extends AppCompatActivity {
         cb_kor.setOnCheckedChangeListener(ch);
         cb_hack.setOnCheckedChangeListener(ch);
 
-
+        mDbHelper = new SettingDbHelper(this);
 
         Button button = (Button) findViewById(R.id.update_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList url = new ArrayList();
-                if(cb_al.isChecked() == true) url.add(getString(R.string.al_jazeera_uri));
-                if(cb_am.isChecked() == true) url.add(getString(R.string.american_conversative_uri));
-                if(cb_ver.isChecked() == true) url.add(getString(R.string.the_verge_uri));
-                if(cb_ars.isChecked() == true) url.add(getString(R.string.ars_technica_uri));
-                if(cb_kor.isChecked() == true) url.add(getString(R.string.korea_uri));
-                if(cb_na.isChecked() == true) url.add(getString(R.string.national_geographic_uri));
-                if(cb_hin.isChecked() == true) url.add(getString(R.string.the_hindu_uri));
-                if(cb_hack.isChecked() == true) url.add(getString(R.string.hacker_news_uri));
+                ArrayList<String> url = new ArrayList<String>();
+                ArrayList<String> name = new ArrayList<String>();
+                if(cb_al.isChecked() == true) {
+                    url.add(getString(R.string.al_jazeera_uri));
+                    name.add(getString(R.string.al_jazeera));
+                }
+                if(cb_am.isChecked() == true) {
+                    url.add(getString(R.string.american_conversative_uri));
+                    name.add(getString(R.string.american_conservative));
+                }
+                if(cb_ver.isChecked() == true) {
+                    url.add(getString(R.string.the_verge_uri));
+                    name.add(getString(R.string.the_verge));
+                }
+                if(cb_ars.isChecked() == true) {
+                    url.add(getString(R.string.ars_technica_uri));
+                    name.add(getString(R.string.ars_technica));
+                }
+                if(cb_kor.isChecked() == true) {
+                    url.add(getString(R.string.korea_uri));
+                    name.add(getString(R.string.korea));
+                }
+                if(cb_na.isChecked() == true) {
+                    url.add(getString(R.string.national_geographic_uri));
+                    name.add(getString(R.string.national_geographic));
+                }
+                if(cb_hin.isChecked() == true) {
+                    url.add(getString(R.string.the_hindu_uri));
+                    name.add(getString(R.string.the_hindu));
+                }
+                if(cb_hack.isChecked() == true) {
+                    url.add(getString(R.string.hacker_news_uri));
+                    name.add(getString(R.string.hacker_news));
+                }
 
-                if(url.size() != 4) {
+                if(url.size() != 4 || name.size() != 4) {
 
                     Toast.makeText(getApplicationContext(),"More or less than 4 media checked! error!",Toast.LENGTH_SHORT);
                 }
 
                 else {
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    db.delete(SettingContract.SettingEntry.TABLE_NAME, null,null);
+                    //deletes all data from table 'setting'
+
+
+                    int errorcheck = 1;
+
+                    for(int i = 0; i < url.size(); i++) {
+                        ContentValues values = new ContentValues();
+                        values.put(SettingContract.SettingEntry.COLUMN_URL, url.get(i));
+                        values.put(SettingContract.SettingEntry.COLUMN_NAME, name.get(i));
+                        long newRowId = db.insert(SettingContract.SettingEntry.TABLE_NAME, null, values);
+                        errorcheck *= newRowId;
+                        if (newRowId == -1) {
+                            // If the row ID is -1, then there was an error with insertion.
+                            Toast.makeText(getApplicationContext(), "Error with saving settings", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    if (errorcheck== -1) {
+                        // If the row ID is -1, then there was an error with insertion.
+                        Toast.makeText(getApplicationContext(), "Error with saving settings", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Toast.makeText(getApplicationContext(), "Successfully stored your settings", Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+
 
                 }
 

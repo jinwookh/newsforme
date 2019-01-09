@@ -4,14 +4,29 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import java.util.ArrayList;
+
 /**
  * Created by minkyung on 2017-05-29.
  */
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
+    private ArrayList<String> urlList;
+    private ArrayList<String> nameList;
     private String[] tabTitles = {"National Geographic", "The Hindu","The Verge", "Al Jazeera"};
 
     SimpleFragmentPagerAdapter(FragmentManager fm) { super(fm); }
+
+    SimpleFragmentPagerAdapter(FragmentManager fm, ArrayList<String> arrayList, ArrayList<String > arrayList2) {
+        super(fm);
+        urlList = arrayList;
+        nameList =  arrayList2;
+        tabTitles[0] = nameList.get(0);
+        tabTitles[1] = nameList.get(1);
+        tabTitles[2] = nameList.get(2);
+        tabTitles[3] = nameList.get(3);
+
+    }
 
     @Override
     //getItem returns NationalFragment or HinduFragment.
@@ -36,7 +51,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return tabTitles[position];
+        return nameList.get(position);
     }
 
     @Override
