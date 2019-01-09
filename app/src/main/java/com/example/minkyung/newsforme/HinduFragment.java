@@ -103,7 +103,12 @@ public class HinduFragment extends Fragment implements LoaderManager.LoaderCallb
         Log.i(LOG_TAG, "Loader created");
         //Since first parameter has to be Context, I used getActivity() method. Do not know what exact Activity is though.
         //Used getString method to convert R.String resource ID to String class.
-        //gotta do databse query at below function's 2nd parameter
-        return new NewsAsyncLoader(getActivity() ,getString(R.string.the_hindu_uri));
+
+        Bundle bundle = this.getArguments();
+        String url = getString(R.string.al_jazeera_uri);
+        if (bundle != null) {
+            url = bundle.getString("url");
+        }
+        return new NewsAsyncLoader(getActivity() ,url);
     }
 }

@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             TextView displayView = (TextView) findViewById(R.id.textView_test);
             if (columnNumber != 4 ) {
-                displayView.setText("You have to choose 4 media. \nGo to setting page, which is at top right corner!");
+                displayView.setText("You have to choose 4 media. \nGo to setting page, which is at top right corner!" +"\nYou have choosed" + columnNumber + "media");
+
                 displayView.setTextSize(45);
                 displayView.setVisibility(View.VISIBLE);
             }

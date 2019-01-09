@@ -1,5 +1,6 @@
 package com.example.minkyung.newsforme;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -34,16 +35,33 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
             switch(position) {
                 case 0:
-                    return new NationalFragment();
+                    Bundle bundle1 = new Bundle();
+                    NationalFragment firstFragment = new NationalFragment();
+                    bundle1.putString("url", urlList.get(0) );
+                    firstFragment.setArguments(bundle1);
+
+                    return firstFragment;
 
                 case 1:
-                    return new HinduFragment();
+                    Bundle bundle2 = new Bundle();
+                    HinduFragment secondFragment = new HinduFragment();
+                    bundle2.putString("url", urlList.get(1) );
+                    secondFragment.setArguments(bundle2);
+                    return secondFragment;
 
                 case 2:
-                    return new VergeFragment();
+                    Bundle bundle3 = new Bundle();
+                    VergeFragment thirdFragment = new VergeFragment();
+                    bundle3.putString("url", urlList.get(2) );
+                    thirdFragment.setArguments(bundle3);
+                    return thirdFragment;
 
                 default:
-                    return new AlJazeeraFragment();
+                    Bundle bundle4 = new Bundle();
+                    AlJazeeraFragment fourthFragment = new AlJazeeraFragment();
+                    bundle4.putString("url", urlList.get(3) );
+                    fourthFragment.setArguments(bundle4);
+                    return fourthFragment;
             }
 
 
