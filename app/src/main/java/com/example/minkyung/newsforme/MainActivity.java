@@ -1,6 +1,8 @@
 package com.example.minkyung.newsforme;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,17 +11,39 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import com.example.minkyung.newsforme.data.SettingContract;
+import com.example.minkyung.newsforme.data.SettingDbHelper;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    private SettingDbHelper mDbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int i = 1;
+        int columnNumber = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mDbHelper = new SettingDbHelper(this);
 
-        if (i == 1) {
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + SettingContract.SettingEntry.TABLE_NAME, null);
+        columnNumber = cursor.getCount();
+        try {
+            TextView displayView = (TextView) findViewById(R.id.textView_test);
+            if (columnNumber != 4 ) {
+                displayView.setText("You have to choose 4 media. \nGo to setting page, which is at top right corner!");
+                displayView.setTextSize(45);
+                displayView.setVisibility(View.VISIBLE);
+            }
+        } finally {
+            cursor.close();
+        }
+
+        if (columnNumber == 4) {
             ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
             SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
             viewPager.setAdapter(adapter);
@@ -28,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.setupWithViewPager(viewPager);
         }
 
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
     }
 
