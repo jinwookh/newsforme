@@ -2,13 +2,13 @@ package com.example.minkyung.newsforme.data;
 
 import android.provider.BaseColumns;
 
-public final class MenuContract {
+public final class SettingContract {
 
-    private MenuContract() {}
+    private SettingContract() {}
 
-    public static final class MenuEntry implements BaseColumns {
+    public static final class SettingEntry implements BaseColumns {
         /** table name: setting */
-        public final static String TABLE_NAME = "menu";
+        public final static String TABLE_NAME = "setting";
 
         /**
          * Unique ID number for the uri (only for use in the database table).
@@ -22,7 +22,7 @@ public final class MenuContract {
          *
          * Type: TEXT
          */
-        public final static String COLUMN_URI="uri";
+        public final static String COLUMN_URI="url";
 
     }
 
