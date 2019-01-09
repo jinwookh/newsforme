@@ -158,6 +158,9 @@ public class settingActivity extends AppCompatActivity {
                     }
                     else {
                         Toast.makeText(getApplicationContext(), "Successfully stored your settings", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                        getApplicationContext().startActivity(i);
+
                         finish();
                     }
 
