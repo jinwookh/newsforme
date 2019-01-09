@@ -742,6 +742,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_setting
 id action_text
 id actions
 id activity_chooser_view_content
@@ -796,7 +797,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id fixed
-id floatingActionButton
 id home
 id homeAsUp
 id icon
@@ -973,6 +973,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description

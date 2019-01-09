@@ -60,9 +60,9 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int all = 0x7f090016;
-        public static final int basic = 0x7f090019;
-        public static final int chains = 0x7f090021;
+        public static final int all = 0x7f090017;
+        public static final int basic = 0x7f09001a;
+        public static final int chains = 0x7f090022;
         public static final int none = 0x7f09005e;
         public static final int packed = 0x7f090063;
         public static final int parent = 0x7f090065;
