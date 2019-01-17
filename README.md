@@ -1,5 +1,5 @@
 # Newsforme
-Shows 10 url of news which is sent by newsapi.com
+Shows 10 title of news data which is sent by newsapi.com
 
 Functions
 ----------
