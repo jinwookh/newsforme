@@ -32,10 +32,17 @@ public class settingActivity extends AppCompatActivity {
     private CheckBox cb_am;
     private CheckBox cb_ver;
     private CheckBox cb_ars;
-    private CheckBox cb_kor;
     private CheckBox cb_na;
     private CheckBox cb_hin;
     private CheckBox cb_hack;
+    private CheckBox cb_kor;
+    private CheckBox cb_jap;
+    private CheckBox cb_china;
+    private CheckBox cb_taiwan;
+
+
+
+
     private int count = 0;
     private int max = 4;
     //will count will be refreshed every time when setting view is opened?
@@ -50,11 +57,14 @@ public class settingActivity extends AppCompatActivity {
         cb_am = (CheckBox)findViewById(R.id.check_american_conservative);
         cb_ver = (CheckBox)findViewById(R.id.check_the_verge);
         cb_ars = (CheckBox)findViewById(R.id.check_ars_technica);
-        cb_kor = (CheckBox)findViewById(R.id.check_korea);
         cb_na = (CheckBox)findViewById(R.id.check_national_geographic);
         cb_hin = (CheckBox)findViewById(R.id.check_the_hindu);
         cb_hack = (CheckBox)findViewById(R.id.check_the_hacker_news);
 
+        cb_kor = (CheckBox)findViewById(R.id.check_korea);
+        cb_jap = (CheckBox)findViewById(R.id.check_japan);
+        cb_china = (CheckBox)findViewById(R.id.check_china);
+        cb_taiwan = (CheckBox)findViewById(R.id.check_taiwan);
 
 
         CompoundButton.OnCheckedChangeListener ch = new CompoundButton.OnCheckedChangeListener() {
@@ -83,8 +93,12 @@ public class settingActivity extends AppCompatActivity {
         cb_hin.setOnCheckedChangeListener(ch);
         cb_na.setOnCheckedChangeListener(ch);
         cb_ver.setOnCheckedChangeListener(ch);
-        cb_kor.setOnCheckedChangeListener(ch);
         cb_hack.setOnCheckedChangeListener(ch);
+
+        cb_kor.setOnCheckedChangeListener(ch);
+        cb_jap.setOnCheckedChangeListener(ch);
+        cb_china.setOnCheckedChangeListener(ch);
+        cb_taiwan.setOnCheckedChangeListener(ch);
 
         mDbHelper = new SettingDbHelper(this);
 
@@ -110,10 +124,6 @@ public class settingActivity extends AppCompatActivity {
                     url.add(getString(R.string.ars_technica_uri));
                     name.add(getString(R.string.ars_technica));
                 }
-                if(cb_kor.isChecked() == true) {
-                    url.add(getString(R.string.korea_uri));
-                    name.add(getString(R.string.korea));
-                }
                 if(cb_na.isChecked() == true) {
                     url.add(getString(R.string.national_geographic_uri));
                     name.add(getString(R.string.national_geographic));
@@ -125,6 +135,27 @@ public class settingActivity extends AppCompatActivity {
                 if(cb_hack.isChecked() == true) {
                     url.add(getString(R.string.hacker_news_uri));
                     name.add(getString(R.string.hacker_news));
+                }
+
+
+                if(cb_kor.isChecked() == true) {
+                    url.add(getString(R.string.korea_uri));
+                    name.add(getString(R.string.korea));
+                }
+
+                if(cb_jap.isChecked() == true) {
+                    url.add(getString(R.string.japan_uri));
+                    name.add(getString(R.string.japan));
+                }
+
+                if(cb_china.isChecked() == true) {
+                    url.add(getString(R.string.china_url));
+                    name.add(getString(R.string.chaina));
+                }
+
+                if(cb_taiwan.isChecked() == true) {
+                    url.add(getString(R.string.taiwan_url));
+                    name.add(getString(R.string.taiwan));
                 }
 
                 if(url.size() != 4 || name.size() != 4) {

@@ -17,6 +17,9 @@
     <string name = "american_conversative_uri">https://newsapi.org/v2/top-headlines?sources=the-american-conservative&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
     <!--string for api of news of korea-->
     <string name = "korea_uri">https://newsapi.org/v2/top-headlines?country=kr&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name = "japan_uri">https://newsapi.org/v2/top-headlines?country=jp&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name = "taiwan_url">https://newsapi.org/v2/top-headlines?country=tw&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
+    <string name = "china_url">https://newsapi.org/v2/top-headlines?country=cn&amp;apiKey=c7d64db4a37b43e29e020f8c07bcfd21</string>
 
 
     <!-- above is string constant for news name -->
@@ -28,6 +31,9 @@
     <string name = "ars_technica"> Ars Technica</string>
     <string name = "american_conservative"> American Conservative </string>
     <string name = "korea">Korea</string>
+    <string name = "japan">Japan</string>
+    <string name = "taiwan">Taiwan</string>
+    <string name = "chaina">China</string>
 
 
 

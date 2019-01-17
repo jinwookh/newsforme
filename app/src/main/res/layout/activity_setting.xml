@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="148dp"
         android:text="UPDATE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/check_the_verge" />
@@ -24,6 +31,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:textStyle= "bold"
+        android:textSize="18dp"
+        android:textColor="@android:color/background_dark"
         android:text="Choose 4 media you want to subscribe"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -76,8 +86,8 @@
         android:id="@+id/check_the_hindu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginLeft="192dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
         android:layout_marginTop="56dp"
         android:text="The Hindu"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,13 +97,12 @@
         android:id="@+id/check_the_hacker_news"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginLeft="192dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
         android:layout_marginTop="20dp"
         android:text="Hacker News"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/check_the_hindu"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/check_the_hindu" />
 
     <CheckBox
         android:id="@+id/check_ars_technica"
@@ -110,10 +119,44 @@
         android:id="@+id/check_korea"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginLeft="196dp"
-        android:layout_marginTop="20dp"
-        android:text="News from Korea"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:text="Korea"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/check_ars_technica" />
+        app:layout_constraintTop_toBottomOf="@+id/check_the_verge" />
+
+    <CheckBox
+        android:id="@+id/check_japan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="296dp"
+        android:text="Japan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check_china"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="China"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_korea" />
+
+    <CheckBox
+        android:id="@+id/check_taiwan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="20dp"
+        android:text="Taiwan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_japan" />
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

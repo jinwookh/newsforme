@@ -763,8 +763,11 @@ id chains
 id check_al_jazeera
 id check_american_conservative
 id check_ars_technica
+id check_china
+id check_japan
 id check_korea
 id check_national_geographic
+id check_taiwan
 id check_the_hacker_news
 id check_the_hindu
 id check_the_verge
@@ -1017,11 +1020,15 @@ string appbar_scrolling_view_behavior
 string ars_technica
 string ars_technica_uri
 string bottom_sheet_behavior
+string chaina
 string character_counter_pattern
+string china_url
 string first_tab
 string fourth_tab
 string hacker_news
 string hacker_news_uri
+string japan
+string japan_uri
 string korea
 string korea_uri
 string national_geographic
@@ -1035,6 +1042,8 @@ string path_password_strike_through
 string search_menu_title
 string second_tab
 string status_bar_notification_info_overflow
+string taiwan
+string taiwan_url
 string the_hindu
 string the_hindu_uri
 string the_verge
