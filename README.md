@@ -12,3 +12,12 @@ Functions
 <div>
   <img width = "200" src = "https://user-images.githubusercontent.com/31182783/51304706-3345f380-1a7c-11e9-8ff8-ff0dc10cc6f9.png">
   </div>
+ 
+Main File Description
+----------
+1. NewsAsyncLoader.java: do url connection, http request, json
+parsing
+2. SettingDbHelper.java: store DB information
+3. MainActivity.java: show news
+4. SettingActivity.java: receive setting information from user,
+and store at DB
