@@ -9,4 +9,6 @@ Functions
 </div>
 
 2. You can select the media or country news you want at setting page.
-
+<div>
+  <img width = "200" src = "https://user-images.githubusercontent.com/31182783/51304706-3345f380-1a7c-11e9-8ff8-ff0dc10cc6f9.png">
+  </div>
