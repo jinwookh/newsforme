@@ -21,3 +21,10 @@ parsing
 3. MainActivity.java: show news
 4. SettingActivity.java: receive setting information from user,
 and store at DB
+
+
+todo
+----------
+- code should be migrated to use AndroidX library.
+- Using `android.support.v4.app` library is not viable in Android Studio Dolphin.
+- importing `android.support.v4.app` library gives 'Version 28 is the last version of the legacy support library' error.
